@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Farm Data</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="localstorage.js" defer></script>
+</head>
+
+<body id="bod">
+    <h1>Welcome to Farmer Hoggett's Pig Management</h1>
+    <table id="tab1">
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>More info</th>
+            <th>Delete</th>
+        </tr>
+
+    </table>
+    <section id="sect">
+        <button id="cross">&times;</button>
+        <table id="tab2" class="popUp">
+            <tr>
+                <th>Name</th>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td><input type="text" id="height"></td>
+            </tr>
+            <tr>
+                <th>Weight</th>
+                <td><input type="text" id="weight"></td>
+            </tr>
+            <tr>
+                <th>Personality</th>
+                <td>
+                    <input type="text" id="personality">
+                </td>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <td> <select name="" id="select">
+                        <option>Please Choose one</option>
+                        <option value="Chestnut">Chestnut</option>
+                        <option value="Grey">Grey</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                    </select></td>
+            </tr>
+            <tr><th id = "change">Ability</th>
+            <td><input type = "text" id = "ability"></td></tr>
+        </table>
+        <button id="add">Enter</button>
+    </section>
+    <button id="show">Add</button>
+</body>
+
+</html>

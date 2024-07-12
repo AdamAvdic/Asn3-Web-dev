@@ -1,0 +1,101 @@
+#tab1 {
+    width: 70%; 
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f2f2f2; 
+    padding: 10px;
+}
+
+#tab2 {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f2f2f2; 
+    padding: 10px; 
+}
+
+section {
+    position: fixed;
+    width: 20%;
+    height: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle box shadow */
+}
+
+
+th {
+    width: 20%;
+    border: 1px solid black;
+}
+
+#td1 {
+    padding-right: 15px;
+    border: 1px solid black;
+}
+#show, #cross, #add {
+    background-color: #b50c6f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#show:hover, #cross:hover, #add:hover {
+    background-color: #b50c6f;
+}
+
+th {
+    width: 25%;
+    border: 1px solid black;
+}
+
+#td1 {
+    padding-right: 15px;
+    border: 1px solid black;
+}
+
+.hovertext {
+    position: relative;
+    border-bottom: 1px dotted black;
+    font-size: 16px; /* Adjust the font size to make it bigger */
+}
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0; /* Increase the padding to make it taller */
+    transition: opacity 1s ease-in-out;
+
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+}
+
+/* Additional style for the "More Info" text inside the button */
+.hovertext:before {
+    font-size: 14px; /* Adjust the font size of the text inside the button */
+}
+
+.hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+section {
+    display: none;
+}
